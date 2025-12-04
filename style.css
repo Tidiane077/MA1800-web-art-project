@@ -1,0 +1,114 @@
+body{
+
+    background: linear-gradient(180deg,#2d0052, #004b59); /* Picked this colour palette because I thought it suited the Urban and nostalgic vibe I was trying to get. */
+    color: #e9faff;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    overflow-x: hidden;
+
+
+}
+
+body::before {
+
+   
+    content:"";
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; 
+    height: 100%;
+    pointer-events: none;
+    background-image:none;
+    background-image:("");
+    opacity: 0.15;
+    z-index: -1;
+}
+
+/*sidebar navigation */
+
+nav {
+    
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background: #111;
+    padding: 20px;
+    width: 180px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+
+}
+
+nav a {
+
+    color: whitesmoke;
+    text-decoration: dotted;
+    font-size: 18px; 
+    padding: 10px;
+    border-left: 2px solid transparent;
+    transition: 0.3s;
+}
+
+nav a:hover {
+
+    color: beige;
+    border-left: 2px solid brown;
+    padding-left: 15px;
+    position: relative;
+    z-index: 1;
+}
+
+nav audio {
+
+    margin-top: 20px;
+    width: 100%;
+}
+
+h1 {
+
+    margin-left: 200px;
+    padding-top: 50px;
+    font-size: 60px;
+    text-shadow: 0 0 10px #a041ff, 0 0 20px #7a00ff;
+    color: #e9daff;
+}
+
+p {
+
+    margin: 100px;
+    margin-left: 750px;
+    font-size: 18px;
+    max-width: 500px;
+}
+
+.hover-text {
+
+    opacity: 0;    /*hides the text... took it from our other class when we Mohammad taught this*/
+    transition: opacity 0.3s;
+}
+
+p:hover .hover-text {
+
+    opacity: 1; /* shows the text when paragraph is hovered over*/
+}
+
+
+a img {
+
+    width: 200px; /* to change the size*/
+    display: block;
+    margin: 50px auto;
+    margin-left: 350px;
+
+}
+
+a img:hover {
+
+    transform: scale(1.05);
+    cursor: pointer;
+}
