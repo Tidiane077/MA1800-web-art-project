@@ -1,0 +1,100 @@
+body{
+
+    background: linear-gradient(180deg,#2d0052, #004b59); /* Picked this colour palette because I thought it suited the Urban and nostalgic vibe I was trying to get. */
+    color: #e9faff;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    overflow-x: hidden;
+
+
+
+}
+
+img {
+
+    position: absolute;
+    user-select:none;
+}
+
+.img1 {
+
+    width:350px;
+    top: 200px;
+    left: 1000px;
+
+}
+
+.img2 {
+
+    width:200px;
+    top: 250px;
+    left: 200px;
+
+}
+
+.img3 {
+
+    width: 200px;
+    top: 400px;
+    left: 100px;
+}
+
+.img4 {
+
+    width: 200px;
+    bottom:500px;
+    left: 400px;
+}
+
+.img5 {
+
+    width: 200px;
+    top: 20px;
+    left: 40px;
+
+
+
+}
+
+.img6 {
+
+    width: 200px;
+    bottom: 100px;
+    right: 50px;
+}
+
+#bg-video {
+
+    position: fixed; /*keeps it in place*/
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover; /*fill screen*/
+    z-index: -1; /*places video behind all the images*/
+}
+
+.center-text {
+
+    font-family: 'MyFont', sans-serif;
+    font-size: 48px;
+    color: purple;
+    text-align: center;
+    text-shadow: 2px 2px 6px rgba(0,0,0,1);
+    text-decoration: none;  
+    cursor: pointer;    
+}
+
+.vid1 {
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -1; /*places behind content*/
+}

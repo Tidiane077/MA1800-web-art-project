@@ -22,7 +22,7 @@ body::before {
     height: 100%;
     pointer-events: none;
     background-image:none;
-    background-image:("");
+    background-image:url("overlays/concrete.jpg");
     opacity: 0.15;
     z-index: -1;
 }
@@ -78,7 +78,7 @@ h1 {
     color: #e9daff;
 }
 
-p {
+.para1 {
 
     margin: 100px;
     margin-left: 750px;
@@ -112,3 +112,4 @@ a img:hover {
     transform: scale(1.05);
     cursor: pointer;
 }
+

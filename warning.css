@@ -1,0 +1,113 @@
+body{
+
+    background: linear-gradient(180deg,#2d0052, #004b59); /* Picked this colour palette because I thought it suited the Urban and nostalgic vibe I was trying to get. */
+    color: #e9faff;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    overflow-x: hidden;
+
+
+}
+
+body::before {
+
+   
+    content:"";
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; 
+    height: 100%;
+    pointer-events: none;
+    background-image:none;
+    background-image:url("overlays/concrete.jpg");
+    opacity: 0.15;
+    z-index: -1;
+
+}
+
+.warnings {
+
+    height: 100vh;
+    position: relative;
+    text-align: center;
+
+}
+
+.tap-box {
+
+    display: none;
+
+}
+
+.tap-area {
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tap-message {
+
+    color: #e9faff;
+    font-size: 26px;
+    opacity: 1;
+    padding: 10px 20px;
+    margin-top: 100px;
+    
+
+}
+
+.warnings {
+
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+
+}
+
+.popup { 
+
+    position: absolute;
+    background: rgba(255, 0, 0, 0.85);
+    color: white;
+    padding: 10px 15px;
+    font-size: 14px;
+    border: 2px solid #fff;
+    border-radius: 6px;
+    opacity: 0;
+    transform: scale(0.6);
+    transition: opacity 0.3s ease-out, transform 0.3s ease-out;
+
+}
+
+.p1{top:8%; left:17%; transform: rotate(-5deg)}
+.p2{top:45%; left:9%; transform: rotate(4deg);}
+.p3{top:72%; left:35%; transform: rotate(-3deg);}
+.p4{top:55%; left:80%; transform: rotate(6deg);}
+.p5{top:65%; left:40%; transform: rotate(-4deg);}
+.p6{top:78%; left:60%; transform: rotate(2deg);}
+.p7{top:85%; left:20%; transform: rotate(-6deg);}
+.p8{top:50%; left: 50%; transform: rotate(5deg);}
+
+.tap-box:checked ~ .warnings .popup {
+
+    opacity: 1;
+    transform: scale(1);
+}
+
+.tap-box:checked + .tap-area .tap-message {
+
+    display:none;
+}

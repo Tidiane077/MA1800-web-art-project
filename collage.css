@@ -1,10 +1,136 @@
+@font-face {
+
+    font-family: 'MyFont';
+    src: url('fonts/purple.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 body{
 
-    background: brown;
-    color: black;
-    font-family:Georgia, 'Times New Roman', Times, serif;
-    text-align: center;
-    margin: 100;
-    padding: 100;
+    background: linear-gradient(180deg,#2d0052, #004b59); /* Picked this colour palette because I thought it suited the Urban and nostalgic vibe I was trying to get. */
+    margin: 0;
+    padding: 0;
+    position: relative;
+    overflow: hidden;
 
+
+
+}
+
+.centre-container {
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    pointer-events: none;
+    z-index: 10;
+}
+
+.center-text {
+
+    font-family: 'MyFont', sans-serif;
+    font-size: 48px;
+    color: purple;
+    text-align: center;
+    text-shadow: 2px 2px 6px rgba(0,0,0,1);
+}
+
+img {
+
+    position: absolute;
+    user-select:none;
+    pointer-events: none;
+}
+
+.img1 {
+
+    width:350px;
+    top: 200px;
+    left: 1000px;
+
+}
+
+.img2 {
+
+    width:600px;
+    top: 250px;
+    left: 200px;
+
+}
+
+.img3 {
+
+    width: 400px;
+    top: 500px;
+    left: 25px;
+}
+
+.img4 {
+
+    width: 200px;
+    bottom:500px;
+    left: 400px;
+
+}
+
+.img5 {
+  
+    width:150px;
+    bottom: 300px;
+    right: 450px;
+
+
+}
+
+.img6 {
+
+    width: 700px;
+    top: 50px;
+    right: 50px;
+
+
+}
+
+.img7 {
+ 
+    width: 400px;
+    bottom: 5px;
+    right: 500px;
+
+}
+
+.img8 {
+
+    width: 200px;
+    top: 5px;
+    left: 50px;
+
+}
+
+.img9 {
+
+    width: 200px;
+    position: absolute;
+    bottom: 10px;
+    right: 7px;
+    cursor: pointer;
+    z-index: 20; /* puts on top of other images*/
+    pointer-events: auto;
+}
+
+
+
+
+
+.img11 {
+
+    width: 300px;
+    bottom: 10px;
+    right: 800px;
 }
